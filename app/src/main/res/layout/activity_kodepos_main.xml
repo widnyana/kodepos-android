@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kalarau.net.kodepos.KodeposMainActivity"
+    android:rowCount="4"
+    android:columnCount="3"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/searchKeyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/btnSearchCaption"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:imeActionId="100"
+        android:imeOptions="actionSearch"
+        />
+
+    <Space android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_gravity="fill_vertical"
+        android:layout_rowSpan="1" />
+
+    <ListView
+        android:id="@+id/SearchResultListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_columnSpan="3"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        />
+</GridLayout>
+

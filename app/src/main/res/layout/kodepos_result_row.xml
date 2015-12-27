@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/resultKodepos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:paddingLeft="@dimen/kodeposResultLabel"
+        android:textColor="@color/black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/kodeposResultBrief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultKodepos"
+        android:textSize="12sp"
+        android:paddingLeft="@dimen/kodeposResultLabel"
+        android:textColor="@color/LightSkyBlue"
+        >
+    </TextView>
+
+
+</RelativeLayout>
